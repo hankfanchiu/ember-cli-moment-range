@@ -1,5 +1,8 @@
 # Ember CLI Moment Range
 
+[![Build Status](https://travis-ci.org/hankfanchiu/ember-cli-moment-range.svg?branch=master)](https://travis-ci.org/hankfanchiu/ember-cli-moment-range)
+[![Code Climate](https://codeclimate.com/github/hankfanchiu/ember-cli-moment-range/badges/gpa.svg)](https://codeclimate.com/github/hankfanchiu/ember-cli-moment-range)
+
 ES6 accessible module for both [Moment.js][moment] and [moment-range][moment-range] within your [Ember.js][ember] application
 
 ## Installation
@@ -10,12 +13,10 @@ ember install ember-cli-moment-range
 
 ## Usage
 
-### Moment
-
 To use `moment` in your Ember app, import the module:
 
 ```javascript
-import moment from `moment`;
+import moment from 'moment';
 ```
 
 Then call `moment` as you would the global `moment` provided by [Moment.js][moment].
