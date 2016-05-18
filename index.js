@@ -4,9 +4,13 @@
 module.exports = {
   name: 'ember-cli-moment-range',
 
-  included: function () {
+  included: function (app) {
     this._super.included.apply(this, arguments);
 
-    this.import('bower_components/moment-range/dist/moment-range.min.js');
+    while (app.app) {
+      app = app.app;
+    }
+
+    this.import(app.bowerDirectory + '/moment-range/dist/moment-range.min.js');
   }
 };
