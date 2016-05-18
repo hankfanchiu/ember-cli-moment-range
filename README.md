@@ -4,7 +4,9 @@ ES6 accessible module for both [Moment.js][moment] and [moment-range][moment-ran
 
 ## Installation
 
-`ember install ember-cli-moment-range`
+```shell
+ember install ember-cli-moment-range
+```
 
 ## Usage
 
@@ -22,10 +24,12 @@ To use [moment-range][moment-range], call the `moment.range()` function.
 
 ### Installation
 
-* `git clone` this repository
-* `cd ember-cli-moment-range`
-* `npm install`
-* `bower install`
+```shell
+git clone git@github.com:hankfanchiu/ember-cli-moment-range.git
+cd ember-cli-moment-range
+npm install
+bower install
+```
 
 ### Running
 
