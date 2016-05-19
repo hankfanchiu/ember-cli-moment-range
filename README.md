@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/hankfanchiu/ember-cli-moment-range.svg?branch=master)](https://travis-ci.org/hankfanchiu/ember-cli-moment-range)
 [![Code Climate](https://codeclimate.com/github/hankfanchiu/ember-cli-moment-range/badges/gpa.svg)](https://codeclimate.com/github/hankfanchiu/ember-cli-moment-range)
+[![Ember Observer Score](https://emberobserver.com/badges/ember-cli-moment-range.svg)](https://emberobserver.com/addons/ember-cli-moment-range)
 
 ES6 accessible module for both [Moment.js][moment] and [moment-range][moment-range] within your [Ember.js][ember] application
 
