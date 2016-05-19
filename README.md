@@ -1,9 +1,10 @@
 # Ember CLI Moment Range
 
-[![npm version][npm version badge]][npm version]
-[![Build Status][build status badge]][build status]
+[![npm version][npm version badge]][npm]
+[![Build Status][travis badge]][travis]
 [![Code Climate][code climate badge]][code climate]
 [![Ember Observer Score][ember observer badge]][ember observer]
+[![MIT License][license badge]][license]
 
 ES6 accessible module for both [Moment.js][moment] and
 [moment-range][moment-range] within your [Ember.js][ember] application
@@ -74,20 +75,34 @@ bower install
 For more information on using ember-cli, visit
 [http://ember-cli.com][ember-cli].
 
+## License
 
-[npm version badge]: https://badge.fury.io/js/ember-cli-moment-range.svg
-[npm version]: https://www.npmjs.com/package/ember-cli-moment-range
-[build status badge]: https://travis-ci.org/hankfanchiu/ember-cli-moment-range.svg?branch=master
-[build status]: https://travis-ci.org/hankfanchiu/ember-cli-moment-range
+Ember CLI Moment Range is freely distributable under the terms
+of the [MIT license][license].
+
+[npm version badge]: http://img.shields.io/npm/v/ember-cli-moment-range.svg?style=flat
+[npm]: https://www.npmjs.com/package/ember-cli-moment-range
+
+[travis badge]: https://travis-ci.org/hankfanchiu/ember-cli-moment-range.svg?branch=master
+[travis]: https://travis-ci.org/hankfanchiu/ember-cli-moment-range
+
 [code climate badge]: https://codeclimate.com/github/hankfanchiu/ember-cli-moment-range/badges/gpa.svg
 [code climate]: https://codeclimate.com/github/hankfanchiu/ember-cli-moment-range
+
 [ember observer badge]: https://emberobserver.com/badges/ember-cli-moment-range.svg
 [ember observer]: https://emberobserver.com/addons/ember-cli-moment-range
+
+[license badge]: http://img.shields.io/badge/license-MIT-blue.svg?style=flat
+[license]: ./LICENSE.md
+
 [moment]: http://momentjs.com
-[moment github]: https://github.com/moment
+[moment github]: https://github.com/moment/moment
 [moment guides]: http://momentjs.com/guides
+
 [moment-range]: https://github.com/gf3/moment-range
 [moment-range examples]: https://github.com/gf3/moment-range#examples
+
 [ember]: http://emberjs.com
 [ember-cli]: http://ember-cli.com
+
 [localhost]: http://localhost:4200
