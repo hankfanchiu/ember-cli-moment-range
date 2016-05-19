@@ -40,7 +40,13 @@
     "loader.js": "^4.0.1"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "ember-cli",
+    "moment.js",
+    "moment",
+    "moment-range",
+    "ember-cli-moment-shim",
+    "ember-cli-moment-range"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.6",
