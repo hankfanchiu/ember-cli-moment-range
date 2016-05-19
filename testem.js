@@ -1,4 +1,5 @@
-/*jshint node:true*/
+/* jshint node: true */
+
 module.exports = {
   "framework": "qunit",
   "test_page": "tests/index.html?hidepassed",

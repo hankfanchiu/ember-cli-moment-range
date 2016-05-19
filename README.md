@@ -1,12 +1,17 @@
 # Ember CLI Moment Range
 
-[![Build Status](https://travis-ci.org/hankfanchiu/ember-cli-moment-range.svg?branch=master)](https://travis-ci.org/hankfanchiu/ember-cli-moment-range)
-[![Code Climate](https://codeclimate.com/github/hankfanchiu/ember-cli-moment-range/badges/gpa.svg)](https://codeclimate.com/github/hankfanchiu/ember-cli-moment-range)
-[![Ember Observer Score](https://emberobserver.com/badges/ember-cli-moment-range.svg)](https://emberobserver.com/addons/ember-cli-moment-range)
+[![npm version][npm version badge]][npm version]
+[![Build Status][build status badge]][build status]
+[![Code Climate][code climate badge]][code climate]
+[![Ember Observer Score][ember observer badge]][ember observer]
 
-ES6 accessible module for both [Moment.js][moment] and [moment-range][moment-range] within your [Ember.js][ember] application
+ES6 accessible module for both [Moment.js][moment] and
+[moment-range][moment-range] within your [Ember.js][ember] application
 
 ## Installation
+
+Installing the Ember CLI Moment Range addon installs both
+[moment][moment github] and [moment-range][moment-range].
 
 ```shell
 ember install ember-cli-moment-range
@@ -14,17 +19,36 @@ ember install ember-cli-moment-range
 
 ## Usage
 
-To use `moment` in your Ember app, import the module:
+To use `moment` in your Ember app, import the module
+and call `moment` as you would the global `moment`.
+
+To use moment-range, invoke the `moment.range()` function.
+
+### Example
 
 ```javascript
+// app/components/date-range.js
+
+import Component from 'ember-component';
+import computed from 'ember-computed';
 import moment from 'moment';
+
+export default Component.extend({
+  dateRange: computed(function () {
+    let startDate = moment('2016-05-18', 'YYYY-MM-DD');
+    let endDate = moment('2016-12-31', 'YYYY-MM-DD');
+
+    return moment.range(startDate, endDate);
+  })
+});
 ```
 
-Then call `moment` as you would the global `moment` provided by [Moment.js][moment].
+To learn more about `moment`, see the [Moment.js Guides][moment guides]
+and the [moment-range examples][moment-range examples].
 
-To use [moment-range][moment-range], call the `moment.range()` function.
+## Contributing
 
-### Installation
+### Installing
 
 ```shell
 git clone git@github.com:hankfanchiu/ember-cli-moment-range.git
@@ -36,11 +60,10 @@ bower install
 ### Running
 
 * `ember server`
-* Visit your app at http://localhost:4200.
+* Visit your app at [http://localhost:4200][localhost].
 
-### Running Tests
+### Testing
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
@@ -48,9 +71,23 @@ bower install
 
 * `ember build`
 
-For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+For more information on using ember-cli, visit
+[http://ember-cli.com][ember-cli].
 
 
-[moment]: http://momentjs.com/ "Moment.js"
-[moment-range]: https://github.com/gf3/moment-range "moment-range package"
-[ember]: http://emberjs.com/ "Ember.js"
+[npm version badge]: https://badge.fury.io/js/ember-cli-moment-range.svg
+[npm version]: https://www.npmjs.com/package/ember-cli-moment-range
+[build status badge]: https://travis-ci.org/hankfanchiu/ember-cli-moment-range.svg?branch=master
+[build status]: https://travis-ci.org/hankfanchiu/ember-cli-moment-range
+[code climate badge]: https://codeclimate.com/github/hankfanchiu/ember-cli-moment-range/badges/gpa.svg
+[code climate]: https://codeclimate.com/github/hankfanchiu/ember-cli-moment-range
+[ember observer badge]: https://emberobserver.com/badges/ember-cli-moment-range.svg
+[ember observer]: https://emberobserver.com/addons/ember-cli-moment-range
+[moment]: http://momentjs.com
+[moment github]: https://github.com/moment
+[moment guides]: http://momentjs.com/guides
+[moment-range]: https://github.com/gf3/moment-range
+[moment-range examples]: https://github.com/gf3/moment-range#examples
+[ember]: http://emberjs.com
+[ember-cli]: http://ember-cli.com
+[localhost]: http://localhost:4200

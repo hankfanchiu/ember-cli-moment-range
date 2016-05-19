@@ -3,7 +3,9 @@
 /dist
 /tests
 /tmp
+
 **/.gitkeep
+
 .bowerrc
 .editorconfig
 .ember-cli
